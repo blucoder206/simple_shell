@@ -1,0 +1,22 @@
+.TH man 2 "27 Nov 2019" "0.32" "Simple shell (hsh) - man page"
+.SH NAME
+.B simple shell (hsh)
+simple shell project it's a command-line interpreter, building in C language
+.
+.SH SYNOPSIS
+    non-interactive
+    echo "cat /etc/passwd" | .hsh
+.SH DESCRIPTION
+    Simple shell it's a basic unix command interpreter like 'sh'
+ 
+.SH Execute binaries that are present on host OS
+    Simple shell uses the function execve to execute an binary and pass arguments
+ 
+.SH Environ variables
+    Simple shell has a function that get all the enviroment functions of the system
+ 
+.SH Exit built-in function
+    Simple shell has the command exit, that allow to user terminate the shell
+ 
+.SH Non-interactive shell
+    user@linux:~$ echo 'cat /bin/ls' | ./hsh
