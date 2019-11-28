@@ -20,3 +20,28 @@ simple shell project it's a command-line interpreter, building in C language
  
 .SH Non-interactive shell
     user@linux:~$ echo 'cat /bin/ls' | ./hsh
+ 
+ 
+.SH Ofcourse you can use the common tools like nc using simple shell (hsh)
+user@linux:~$ ./hsh
+$ nc -lvp 444
+ 
+ 
+.SH Download
+Clone the repository
+ 
+git clone https://github.com/blucoder206/simple_shell.git
+ 
+.SH Compile
+Compile all .c files
+ 
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+ 
+ 
+Now you're ready to use our simple shell.
+ 
+.SH SEE ALSO
+.I execve(2), stat(2)
+ 
+.SH AUTHORS
+Gabriel Montaño, Juan Esquivel
